@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.popup {
+    width: 350px;
+}
+
+.popup .picker {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+
+.picker #color-picker {
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #5372f0;
+}
+
+.picked-colors {
+    margin: 10px 15px;
+}
+
+.picked-colors.hide {
+    display: none;
+}
+
+.picked-colors header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.picked-colors header .title {
+    font-size: 1rem;
+}
+
+.picked-colors .clear-all {
+    color: #5372f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.all-colors {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.all-colors .color {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+}
+
+.all-colors .color .rect {
+    display: block;
+    height: 22px;
+    width: 22px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+.all-colors .color .value {
+    font-size: 0.96rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
